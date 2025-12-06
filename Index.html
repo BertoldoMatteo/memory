@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORY</title>
+    <script src="Code/code.js"></script>
+    <style rel="stylesheet" href="Style/style.css"></style>
+</head>
+<body>
+    <main id="cont">
+        <h1>Gioco del memory</h1>
+        <form>
+            <label>DIFFICOLTA'</label>
+            <select autofocus id="mod">
+                <option value="0"></option>
+                <option value="2">EASY(4 CARTE)</option>
+                <option value="4">MEDIUM(16 CARTE)</option>
+                <option value="6">HARD(36 CARTE)</option>
+            </select>
+            <input type="button" onclick="creaForm(parseInt(document.getElementById('mod').value))" value="Clicca!" id="b1">
+        </form>
+    </main>
+</body>
+</html>
